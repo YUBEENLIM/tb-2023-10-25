@@ -4,16 +4,25 @@ import java.util.Scanner;
 
 public class App {
     void run(){
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("== 명언 앱 ==");
         while(true) {
             System.out.print("명령) ");
-
-            Scanner scanner = new Scanner(System.in);
             String cmd = scanner.nextLine();
+
             if(cmd.equals("종료")){
                 break;
             }
-            System.out.println(cmd);
+
+            System.out.print("명언 : ");
+            String a = scanner.nextLine();
+            System.out.print("작가 : ");
+            String b = scanner.nextLine();
+
+
+
+
         }
     }
 }
